@@ -1,13 +1,7 @@
 
 var irc = require('node-twitch-irc'),
-    _ = require('underscore');
-
-var config = {
-    nickname: 'simbaboterino', // it's important that this is all lowercase
-    channels: ['jared0x90','karmaah'],
-    oauth: process.argv[2],
-    twitchclient: 1
-};
+    _ = require('underscore'),
+    config = require('./config.js');
 
 // List of mods in your channel.
 var mods = ['jared0x90','karmaah'];
@@ -39,7 +33,7 @@ var client = new irc.connect(
                     console.log('['+channel+'] <'+from.color+'|'+from.username+'|'+from.special+'> '+message);
 
                     if(channel === '#karmaah') {
-                        // client.say('karmaah', message);
+
                     }
 
                     if(channel === '#jared0x90') {
