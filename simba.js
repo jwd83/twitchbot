@@ -14,7 +14,6 @@ var commands = {
         "!ameno": "༼ つ ◕_◕ ༽つ AMENO ༼ つ ◕_◕ ༽つ",
         "!moobot": "Moobot is OK I suppose. He smells a bit funny.",
         "!crazybot": "Sadly Crazybot was DOA, I am his replacement! ",
-        "!commands": "Some of my commands are !hacks, !poll, !molly, !ameno, !amenoriot, !mollyriot, !simba, !links, !sm4llz and !about",
         "!amenoriot": "༼ つ ◕_◕ ༽つ AMENO OR RIOT ༼ つ ◕_◕ ༽つ",
         "!mollyriot": "༼ つ ◕_◕ ༽つ MOLLY OR RIOT ༼ つ ◕_◕ ༽つ",
         "!simba": "Hi, my name is Simba. I am Karma's famous cat! I have created this bot in an attempt to rule the world. Get out now while you can!",
@@ -34,7 +33,6 @@ var commands = {
         "!ameno": "༼ つ ◕_◕ ༽つ AMENO ༼ つ ◕_◕ ༽つ",
         "!moobot": "Moobot is OK I suppose. He smells a bit funny.",
         "!crazybot": "Sadly Crazybot was DOA, I am his replacement! ",
-        "!commands": "Some of my commands are !hacks, !poll, !molly, !ameno, !amenoriot, !mollyriot, !simba, !links, !sm4llz and !about",
         "!amenoriot": "༼ つ ◕_◕ ༽つ AMENO OR RIOT ༼ つ ◕_◕ ༽つ",
         "!mollyriot": "༼ つ ◕_◕ ༽つ MOLLY OR RIOT ༼ つ ◕_◕ ༽つ",
         "!simba": "Hi, my name is Simba. I am Karma's famous cat! I have created this bot in an attempt to rule the world. Get out now while you can!",
@@ -82,12 +80,22 @@ var client = new irc.connect(
 
                     // if(commands.hasOwnProperty(channel)) {
                     if (channel in commands) {
-                        // console.log('Commands found for channel: ' + channel);
-                        for(var cmd in commands[channel]) {
-                            // verify we are looking at a property
-                            if (commands[channel].hasOwnProperty(cmd)) {
-                                if(message === cmd) {
-                                    client.say(channel, commands[channel][cmd]);
+
+                        if(message === "!commands" || message === "!help" ) {
+                            var command_list = "Commands for this channel include: ";
+
+                            for(var cmd in commands[channel]) {
+                                command_list = command_list + cmd + ", ";
+                            }
+
+                            client.say(channel, command_list);
+                        } else {
+                            for(var cmd in commands[channel]) {
+                                // verify we are looking at a property
+                                if (commands[channel].hasOwnProperty(cmd)) {
+                                    if(message === cmd) {
+                                        client.say(channel, commands[channel][cmd]);
+                                    }
                                 }
                             }
                         }
