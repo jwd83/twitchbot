@@ -25,7 +25,7 @@ var commands = {
         "!bets": "Place your bets! If you are new here we bet on how many clicks it will take to break each of the 3 windows. Typically this is from 5-9 clicks. An example bet is 6/7/8.",
         "!plugdj": "http://plug.dj/karmaah/",
         "!plug": "http://plug.dj/karmaah/",
-        "!deck": "Current: http://imgur.com/fHHsCsC, TempoLock: http://imgur.com/ZArdKm2, Miracle Priest: http://imgur.com/F8sgk1R, Disgusting: http://imgur.com/XjGPeys"
+        "!deck": "Current: http://imgur.com/fHHsCsC , TempoLock: http://imgur.com/ZArdKm2 , Miracle Priest: http://imgur.com/F8sgk1R , Disgusting: http://imgur.com/XjGPeys"
     },
     "#jared0x90": {
         "!alive": "i am alive",
