@@ -20,9 +20,12 @@ var commands = {
         "!twittah": "Follow me on twitter for the latest stream news . www.twitter.com/KarmahTV",
         "!sm4llz": "Checkout Sm4llz stream at http://www.twitch.tv/sm4llz",
         "!about": "I strive to be the humble servant of Karma. The Geoffrey to her Vivian Banks.",
-        "!links": "Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah",
-        "!alien": "Alien Sex Poll http://strawpoll.me/2188418"
-
+        "!links": "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah",
+        "!alien": "Alien Sex Poll http://strawpoll.me/2188418",
+        "!bets": "Place your bets! If you are new here we bet on how many clicks it will take to break each of the 3 windows. Typically this is from 5-9 clicks. An example bet is 6/7/8.",
+        "!plugdj": "http://plug.dj/karmaah/",
+        "!plug": "http://plug.dj/karmaah/",
+        "!deck": "Current: http://imgur.com/fHHsCsC, TempoLock: http://imgur.com/ZArdKm2, Miracle Priest: http://imgur.com/F8sgk1R, Disgusting: http://imgur.com/XjGPeys"
     },
     "#jared0x90": {
         "!alive": "i am alive",
@@ -40,8 +43,11 @@ var commands = {
         "!sm4llz": "Checkout Sm4llz stream at http://www.twitch.tv/sm4llz",
         "!about": "I strive to be the humble servant of Karma. The Geoffrey to her Vivian Banks.",
         "!links": "Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah",
-        "!alien": "Alien Sex Poll http://strawpoll.me/2188418"
-
+        "!alien": "Alien Sex Poll http://strawpoll.me/2188418",
+        "!bets": "Place your bets! If you are new here we bet on how many clicks it will take to break each of the 3 windows. Typically this is from 5-9 clicks. An example bet is 6/7/8.",
+        "!plugdj": "http://plug.dj/karmaah/",
+        "!plug": "http://plug.dj/karmaah/",
+        "!deck": "Current: http://imgur.com/fHHsCsC, TempoLock: http://imgur.com/ZArdKm2, Miracle Priest: http://imgur.com/F8sgk1R, Disgusting: http://imgur.com/XjGPeys"
     }
 };
 
