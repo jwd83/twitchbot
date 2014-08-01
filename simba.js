@@ -12,6 +12,7 @@ var commands = {
         "!poll": "Which emma is hotter? http://strawpoll.me/2188097",
         "!molly": "༼ つ ◕_◕ ༽つ MOLLY༼ つ ◕_◕ ༽つ",
         "!ameno": "༼ つ ◕_◕ ༽つ AMENO ༼ つ ◕_◕ ༽つ",
+        "!rekt": "༼ つ ◕_◕ ༽つ REKT SLUT ༼ つ ◕_◕ ༽つ",
         "!moobot": "Moobot is OK I suppose. He smells a bit funny.",
         "!crazybot": "Sadly Crazybot was DOA, I am his replacement! ",
         "!amenoriot": "༼ つ ◕_◕ ༽つ AMENO OR RIOT ༼ つ ◕_◕ ༽つ",
