@@ -21,14 +21,15 @@ var commands = {
         "!twittah": "Follow me on twitter for the latest stream news . www.twitter.com/KarmahTV",
         "!sm4llz": "Checkout Sm4llz stream at http://www.twitch.tv/sm4llz",
         "!dingle": "Checkout DingleDerper's stream at http://www.twitch.tv/dinglederper",
-        "!link": "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah",
-        "!links": "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah",
+        "!link": "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah, Fan Site: http://karmaahfans.jwd.me",
+        "!links": "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah, Fan Site: http://karmaahfans.jwd.me",
         "!alien": "Alien Sex Poll http://strawpoll.me/2188418",
         "!bets": "Place your bets! If you are new here we bet on how many clicks it will take to break each of the 3 windows. Typically this is from 5-9 clicks. An example bet is 6/7/8.",
         "!plugdj": "http://plug.dj/karmaah/",
         "!plug": "http://plug.dj/karmaah/",
         "!deck": "Current: http://imgur.com/fHHsCsC , TempoLock: http://imgur.com/ZArdKm2 , Miracle Priest: http://imgur.com/F8sgk1R , Disgusting: http://imgur.com/XjGPeys",
-        "!dance": "┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓ ┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓"
+        "!dance": "┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓ ┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓",
+        "!karma": "http://karmaahfans.jwd.me Check out my site for decklists and other information!"
     },
     "#jared0x90": {
         "!alive": "i am alive",
@@ -113,6 +114,16 @@ var client = new irc.connect(
                     }
                 }
             );
+            
+            // repeatable methods
+            
+            // 600000 = 10 minutes
+            
+            setInterval(function () {
+                client.say("#karmaah" , "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah, Fan Site: http://karmaahfans.jwd.me");
+            },  600000);
+            
+            
         } else {
             console.log(err);
         }
