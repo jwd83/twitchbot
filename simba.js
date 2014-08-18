@@ -29,7 +29,8 @@ var commands = {
         "!plug": "http://plug.dj/karmaah/",
         "!deck": "Current: http://imgur.com/fHHsCsC , TempoLock: http://imgur.com/ZArdKm2 , Miracle Priest: http://imgur.com/F8sgk1R , Disgusting: http://imgur.com/XjGPeys",
         "!dance": "┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓ ┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓",
-        "!karma": "http://karmaahfans.jwd.me Check out my site for decklists and other information!"
+        "!karma": "http://karmaahfans.jwd.me Check out my site for decklists and other information!",
+        "!beast": "She's a beast, I call her Karma"
     },
     "#jared0x90": {
         "!alive": "i am alive",
