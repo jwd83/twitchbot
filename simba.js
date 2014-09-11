@@ -6,53 +6,37 @@ var irc = require('node-twitch-irc'),
 // Create our commands object
 var commands = {
     "#karmaah": {
-        "!alive": "i am alive",
-        "!areyouthere": "I LIVE",
-        "!hacks": "Bitch, does it look like she's hacking?",
-        "!poll": "Which emma is hotter? http://strawpoll.me/2188097",
-        "!molly": "༼ つ ◕_◕ ༽つ MOLLY༼ つ ◕_◕ ༽つ",
+        "!about": "Karma's name is Jaime. She is 21 years young and lives in bean town (Boston, MA, USA)",
         "!ameno": "༼ つ ◕_◕ ༽つ AMENO ༼ つ ◕_◕ ༽つ",
-        "!rekt": "༼ つ ◕_◕ ༽つ REKT SLUT ༼ つ ◕_◕ ༽つ",
-        "!moobot": "Moobot is OK I suppose. He smells a bit funny.",
-        "!crazybot": "Sadly Crazybot was DOA, I am his replacement! ",
         "!amenoriot": "༼ つ ◕_◕ ༽つ AMENO OR RIOT ༼ つ ◕_◕ ༽つ",
-        "!mollyriot": "༼ つ ◕_◕ ༽つ MOLLY OR RIOT ༼ つ ◕_◕ ༽つ",
-        "!simba": "Hi, my name is Simba. I am Karma's famous cat! I have created this bot in an attempt to rule the world. Get out now while you can!",
-        "!twittah": "Follow me on twitter for the latest stream news . www.twitter.com/KarmahTV",
-        "!sm4llz": "Checkout Sm4llz stream at http://www.twitch.tv/sm4llz",
-        "!dingle": "Checkout DingleDerper's stream at http://www.twitch.tv/dinglederper",
+        "!beast": "She's a beast, I call her Karma",
+        "!bets": "Place your bets! If you are new here we bet on how many clicks it will take to break each of the 3 windows. Typically this is from 5-9 clicks. An example bet is 6/7/8.",
+        "!boys": "K A R M A B O Y S", 
+        "!crazybot": "Sadly Crazybot was DOA, I am his replacement! ",
+        "!deck": "Karma's decklists can be found here: http://imgur.com/a/zBKR2",
+        "!decks": "Karma's decklists can be found here: http://imgur.com/a/zBKR2",
+        "!dance": "┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓ ┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓",
+        "!fansite": "http://karmaahfans.jwd.me Check out my site for decklists and other information!",
+        "!gefft": "༼ つ ◕_◕ ༽つYOU GOT GEFFT ༼ つ ◕_◕ ༽つ",
+        "!girls": "K A R M A G I R L S",
+        "!grills": "K A R M A G I R L S",
+        "!hacks": "Bitch, does it look like she's hacking?",
         "!link": "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah, Fan Site: http://karmaahfans.jwd.me",
         "!links": "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah, Fan Site: http://karmaahfans.jwd.me",
-        "!alien": "Alien Sex Poll http://strawpoll.me/2188418",
-        "!bets": "Place your bets! If you are new here we bet on how many clicks it will take to break each of the 3 windows. Typically this is from 5-9 clicks. An example bet is 6/7/8.",
+        "!molly": "༼ つ ◕_◕ ༽つ MOLLY༼ つ ◕_◕ ༽つ",
+        "!mollyriot": "༼ つ ◕_◕ ༽つ MOLLY OR RIOT ༼ つ ◕_◕ ༽つ",
+        "!playlist": "Karma's playlists can be found here: ----Spotify: http://goo.gl/eso6Pr ----YouTube: http://goo.gl/4SGrfe",
         "!plugdj": "http://plug.dj/karmaah/",
-        "!plug": "http://plug.dj/karmaah/",
-        "!deck": "Current: http://imgur.com/fHHsCsC , TempoLock: http://imgur.com/ZArdKm2 , Miracle Priest: http://imgur.com/F8sgk1R , Disgusting: http://imgur.com/XjGPeys",
-        "!dance": "┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓ ┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓",
-        "!karma": "http://karmaahfans.jwd.me Check out my site for decklists and other information!",
-        "!beast": "She's a beast, I call her Karma"
+        "!rekt": "༼ つ ◕_◕ ༽つ REKT SLUT ༼ つ ◕_◕ ༽つ",
+        "!sm4llz": "Checkout Sm4llz stream at http://www.twitch.tv/sm4llz",
+        "!shades": "karDeal",
+        "!simba": "Hi, my name is Simba. I am Karma's famous cat! I have created this bot in an attempt to rule the world. Get out now while you can!",
+        "!subemotes": "Subscriber emotes include karSimba (kar Simba) and karDeal (kar Deal)",
+        "!twittah": "Follow me on twitter for the latest stream news . www.twitter.com/KarmahTV",
     },
     "#jared0x90": {
         "!alive": "i am alive",
-        "!areyouthere": "I LIVE",
-        "!hacks": "Bitch, does it look like she's hacking?",
-        "!poll": "Which emma is hotter? http://strawpoll.me/2188097",
-        "!molly": "༼ つ ◕_◕ ༽つ MOLLY༼ つ ◕_◕ ༽つ",
-        "!ameno": "༼ つ ◕_◕ ༽つ AMENO ༼ つ ◕_◕ ༽つ",
-        "!moobot": "Moobot is OK I suppose. He smells a bit funny.",
-        "!crazybot": "Sadly Crazybot was DOA, I am his replacement! ",
-        "!amenoriot": "༼ つ ◕_◕ ༽つ AMENO OR RIOT ༼ つ ◕_◕ ༽つ",
-        "!mollyriot": "༼ つ ◕_◕ ༽つ MOLLY OR RIOT ༼ つ ◕_◕ ༽つ",
-        "!simba": "Hi, my name is Simba. I am Karma's famous cat! I have created this bot in an attempt to rule the world. Get out now while you can!",
-        "!twittah": "Follow me on twitter for the latest stream news . www.twitter.com/KarmahTV",
-        "!sm4llz": "Checkout Sm4llz stream at http://www.twitch.tv/sm4llz",
-        "!about": "I strive to be the humble servant of Karma. The Geoffrey to her Vivian Banks.",
-        "!links": "Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah",
-        "!alien": "Alien Sex Poll http://strawpoll.me/2188418",
-        "!bets": "Place your bets! If you are new here we bet on how many clicks it will take to break each of the 3 windows. Typically this is from 5-9 clicks. An example bet is 6/7/8.",
-        "!plugdj": "http://plug.dj/karmaah/",
-        "!plug": "http://plug.dj/karmaah/",
-        "!deck": "Current: http://imgur.com/fHHsCsC, TempoLock: http://imgur.com/ZArdKm2, Miracle Priest: http://imgur.com/F8sgk1R, Disgusting: http://imgur.com/XjGPeys"
+        "!areyouthere": "I LIVE"
     }
 };
 
@@ -119,10 +103,15 @@ var client = new irc.connect(
             // repeatable methods
             
             // 600000 = 10 minutes
-            
+            /*
             setInterval(function () {
                 client.say("#karmaah" , "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah, Fan Site: http://karmaahfans.jwd.me");
             },  600000);
+            */
+            
+            setInterval(function () {
+                client.say("#karmaah" , "Twittah: http://twitter.com/karmahTV");
+            },  500000);
             
             
         } else {
