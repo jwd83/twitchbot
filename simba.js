@@ -11,12 +11,14 @@ var commands = {
         "!amenoriot": "༼ つ ◕_◕ ༽つ AMENO OR RIOT ༼ つ ◕_◕ ༽つ",
         "!beast": "She's a beast, I call her Karma",
         "!bets": "Place your bets! If you are new here we bet on how many clicks it will take to break each of the 3 windows. Typically this is from 5-9 clicks. An example bet is 6/7/8.",
-        "!boys": "K A R M A B O Y S", 
+        "!blondie": "\\(⌒‿⌒✿)/",
+        "!boys": "K A R M A B O Y S",
         "!crazybot": "Sadly Crazybot was DOA, I am his replacement! ",
         "!deck": "Karma's decklists can be found here: http://hskarma.blogspot.com/decks",
         "!decks": "Karma's decklists can be found here: http://hskarma.blogspot.com/decks",
         "!decklist": "Karma's decklists can be found here: http://hskarma.blogspot.com/decks",
         "!dance": "┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓ ┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓┏(-_-)┛┗(-_- )┓┗(-_-)┛┏(-_-)┓",
+        "!era": "Hunter God: http://www.twitch.tv/hsera",
         "!fedora": "http://gyazo.com/12c11cfc12cfa40f353fc9a9847669b1",
         "!gary": "Gary is a snail brought to you in four hundred and thirty-two lines of progressive scan definition.",
         "!gefft": "༼ つ ◕_◕ ༽つYOU GOT GEFFT ༼ つ ◕_◕ ༽つ",
@@ -24,7 +26,9 @@ var commands = {
         "!girls": "K A R M A G I R L S",
         "!grills": "K A R M A G I R L S",
         "!hacks": "Bitch, does it look like she's hacking?",
+        "!huffer": "Huffer sent Karma this on snapchat: http://gyazo.com/2e240f2ea1d8273192451fab5d603820",
         "!jaraxxus": "http://i.gyazo.com/892a5842b5b5ab553a0b8f3732dfd67e.mp4",
+        "!joey": "Top level hearthstone streamer who streams handlock !!! www.twitch.tv/joeysc2",
         "!legend": "http://i.gyazo.com/b5a58b106ec595f6fa3d137ac0f145f9.mp4",
         "!link": "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah, Web Site: http://hskarma.blogspot.com/",
         "!links": "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah, Web Site: http://hskarma.blogspot.com/",
@@ -33,13 +37,15 @@ var commands = {
         "!mollyriot": "༼ つ ◕_◕ ༽つ MOLLY OR RIOT ༼ つ ◕_◕ ༽つ",
         "!playlist": "Karma's playlists can be found here: ----Spotify: http://goo.gl/eso6Pr ----YouTube: http://goo.gl/4SGrfe",
         "!plugdj": "http://plug.dj/karmaah/",
+        "!protest": "(◕‿◕✿) PEACEFUL PROTEST (◕‿◕✿)",
         "!ransom": "Hello my name is Simba. I have captured a woman known as Karma. If you ever want to see her again send catnip, playballs w/ bells, and treats w/ turkey to Boston, MA. Sincerely, your ruler.",
         "!rekt": "༼ つ ◕_◕ ༽つ REKT SLUT ༼ つ ◕_◕ ༽つ",
         "!sm4llz": "Checkout Sm4llz stream at http://www.twitch.tv/sm4llz",
-        "!source": "The source code for KarmaBoterino can be found here: https://github.com/jared0x90/twitchbot",
+        "!source": "The source code for KarmaBoterino can be found here: https://github.com/jared0x90/twitchbot/blob/master/simba.js",
         "!shades": "karDeal",
         "!simba": "Hi, my name is Simba. I am Karma's famous cat! I have created this bot in an attempt to rule the world. Get out now while you can!",
         "!subemotes": "Subscriber emotes include karSimba (kar Simba), karDeal (kar Deal), karBM (kar BM) & karKappa (karK appa)",
+        "!tome": "Click for TOME access ~> http://kix.io/d4f <~", 
         "!twittah": "Follow me on twitter for the latest stream news . www.twitter.com/KarmahTV",
         "!website": "http://hskarma.blogspot.com/ Check out my site for decklists & the latest news!",
     },
@@ -49,7 +55,7 @@ var commands = {
     },
     "#hyp3d": {
         "!boys": "H Y P 3 D B O Y S"
-    }    
+    }
 };
 
 
@@ -111,21 +117,20 @@ var client = new irc.connect(
                     }
                 }
             );
-            
+
             // repeatable methods
-            
+
             // 600000 = 10 minutes
             /*
             setInterval(function () {
-                client.say("#karmaah" , "Play TOME with Karma: http://kix.io/d4f , Twittah: http://twitter.com/karmahTV , YouTube: http://youtube.com/karmathesnipah, Web Site: http://hskarma.blogspot.com/");
-            },  600000);
-            */
-            
+                client.say("#karmaah" , "Click for TOME access ~> http://kix.io/d4f <~");
+            },  400000);
+*/            
             setInterval(function () {
                 client.say("#karmaah" , "Twittah: http://twitter.com/karmahTV");
             },  500000);
-            
-            
+
+
         } else {
             console.log(err);
         }
