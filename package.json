@@ -2,8 +2,8 @@
     "name": "SimbaBot",
     "version": "0.0.1",
     "scripts": {
-        "start": "node simba.js",
-        "setup": "node simba.js setup"
+        "start": "nodejs simba.js",
+        "setup": "nodejs simba.js setup"
     },
     "dependencies": {
         "node-twitch-irc": "*",
