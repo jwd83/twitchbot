@@ -38,7 +38,7 @@ var commands = {
         "!protest": "(◕‿◕✿) PEACEFUL PROTEST (◕‿◕✿)",
         "!ransom": "Hello my name is Simba. I have captured a woman known as Karma. If you ever want to see her again send catnip, playballs w/ bells, and treats w/ turkey to Boston, MA. Sincerely, your ruler.",
         "!sm4llz": "Checkout Sm4llz stream at http://www.twitch.tv/sm4llz",
-        "!source": "The source code for KarmaBoterino can be found here: https://github.com/jared0x90/twitchbot/blob/master/simba.js",
+        "!source": "The source code for KarmaBoterino can be found here: https://github.com/jwd83/twitchbot/blob/master/simba.js",
         "!shades": "karDeal",
         "!simba": "Hi, my name is Simba. I am Karma's famous cat! I have created this bot in an attempt to rule the world. Get out now while you can!",
         "!subemotes": "Subscriber emotes include karSimba (kar Simba), karDeal (kar Deal), karBM (kar BM) & karKappa (karK appa)",
@@ -46,7 +46,7 @@ var commands = {
         "!twittah": "Follow me on twitter for the latest stream news . www.twitter.com/KarmahTV",
         "!website": "http://hskarma.blogspot.com/ Check out my site for decklists & the latest news!"
     },
-    "#jared0x90": {
+    "#jwd83": {
         "!alive": "i am alive",
         "!areyouthere": "I LIVE"
     }
